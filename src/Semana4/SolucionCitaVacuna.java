@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class SolucionCitaVacuna {
 
-    public String obtenerCitaVacuna(short numRiesgos){
+    public String obtenerCitaVacuna (short numRiesgos){
         String resultado;
         
         if(numRiesgos == 1){
@@ -20,7 +20,7 @@ public class SolucionCitaVacuna {
         return resultado;
     }
     
-    public String obtenerCitaVacuna(){
+    public String obtenerCitaVacuna (){
         Scanner escaner = new Scanner(System.in);
         String resultado;
         short numFactores;
@@ -38,5 +38,8 @@ public class SolucionCitaVacuna {
             resultado = "día siguiente";
         }
         return resultado;
+    }
+    public static void main(String[] args){
+        
     }
 }
