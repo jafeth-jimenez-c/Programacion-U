@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class PracticaCitas {
 
 
-    public String obtenerCitaVacuna (short numRiesgos){
+    public String obtenerCitaVacunass (short numRiesgos){
         String resultado;
         
         if(numRiesgos == 1){
