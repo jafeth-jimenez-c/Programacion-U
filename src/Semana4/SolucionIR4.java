@@ -5,10 +5,7 @@
  */
 package semana4;
 
-/**
- *
- * @author Andres
- */
+
 public class SolucionIR4 {
     public double calcularImpuesto(int numDependientes, double salario){
         double resultado;
