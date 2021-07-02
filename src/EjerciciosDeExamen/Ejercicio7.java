@@ -5,10 +5,7 @@
  */
 package EjerciciosDeExamen;
 
-
-
-
-
+import java.util.Scanner;
 
 /**
  *
@@ -16,22 +13,14 @@ package EjerciciosDeExamen;
  */
 public class Ejercicio7 {
 
-    public static void main(String[] args) {
-       double xY;
-        
-        
-    }
-    public static double xY(double x, int y){
-        double X = 3;
-         System.out.print(" ");
-        
-        if(y == 5)
-            X = x;
-        else if(x==5);       
-    
-        if(X<5)
-            X = y + x;
-        
-        return X;
+    public class elevarPotencia {
+
+        public static void main(String[] args) {
+            Scanner s = new Scanner(System.in);
+            int var = 0;
+            System.out.println("Teclar numero");
+            var = s.nextInt();
+            System.out.print(Math.pow(var, 3));
+        }
     }
 }
