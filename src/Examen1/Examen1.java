@@ -20,14 +20,12 @@ public class Examen1 {
         int trabajadoresCovid = 0;
         int ingresoPromedio = 0;
         boolean creditos = false;
-        
-        //Datos guardados
-        
+        int poblacion = 0;
 
         Scanner s = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Menu \n1) Digitar datos de la empresa\n2)Imprimir información competa de la empresa" + "\n3) Estado inicial");
+            System.out.println("Menu \n1) Digitar datos de la empresa\n2)Imprimir información competa de la empresa" + "\n3)Prestamo e interes\n4) Estado inicial");
             int opcion = s.nextInt();
 
             switch (opcion) {
@@ -48,34 +46,53 @@ public class Examen1 {
                     break;
                 }
                 case 2: {
-                  System.out.println("Datos de la empresa: "
-                        +"\n " + nombre
-                        +"\n " + provincia
-                        +"\n " + trabajadores
-                        +"\n " + trabajadoresCovid
-                        +"\n " + ingresoPromedio
-                        +"\n " + creditos
-                  );  
-                  
-                  if(trabajadoresCovid>20)
-                      System.out.println("ALERTA");                  
-                  
+                    System.out.println("Datos de la empresa: "
+                            + "\n " + nombre
+                            + "\n " + provincia
+                            + "\n " + trabajadores
+                            + "\n " + trabajadoresCovid
+                            + "\n " + ingresoPromedio
+                            + "\n " + creditos
+                    );
+
+                    if (trabajadoresCovid > 20) {
+                        System.out.println("ALERTA");
+
+                        break;
+                    }
+
                 }
                 case 3: {
-                    
-                    System.out.println("Problacion de San José: 1404 242");
-                    System.out.println("Poblacion de Alajuela: 848 146");
-                    System.out.println("Poblacion de Cartago: 490 903");
-                    System.out.println("Problacion de Heredia: 433 677");
-                    System.out.println("Poblacion de Guanacaste: 326 953");
-                    System.out.println("Poblacion de Puntarenas: 410 929");
-                    System.out.println("Poblacion de Limón: 386 862");
-                    
-                    
-                   
+
+                    double resultado = 0;
+
+                    if (trabajadores > 10) {
+                        resultado = 0.5;
+                    } else if (trabajadores > 30) {
+                        resultado = 0.4;
+                    } else if (trabajadores >= 30) {
+                        resultado = 0.3;
+                    }
+                    break;
+
                 }
             }
 
         }
+    }
+
+    public static double interes(double resultado, int trabajadores, int trabajadoresCovid, int poblacion) {
+
+        resultado = 0;
+
+        if (trabajadores > 10) {
+            resultado = 0.5;
+        } else if (trabajadores > 30) {
+            resultado = 0.4;
+        } else if (trabajadores >= 30) {
+            resultado = 0.3;
+        }
+        return resultado;
+
     }
 }
