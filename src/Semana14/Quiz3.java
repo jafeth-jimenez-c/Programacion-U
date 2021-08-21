@@ -7,8 +7,9 @@ package Semana14;
 
 /**
  * COMENTARIO:
- * Respuesta: 1-Porque usa un no primitivo referencia a una clase o objeto Short como si fuera primitivo y deberia ir con minuscula 
- * para poder leer bien el numero entero.
+ * Respuesta: 1-Porque usa un no primitivo referencia a una clase o objeto 
+ * Short como si fuera primitivo y deberia ir con minuscula 
+ * (short) para poder leer bien el numero entero.
  * 
  */
 
