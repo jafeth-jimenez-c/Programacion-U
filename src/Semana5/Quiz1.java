@@ -36,13 +36,13 @@ public class Quiz1 {
         System.out.println("Desea " + nombreIngrediente3 + "?");
         indIngrediente3 = s.nextBoolean();
 
-        int tamano = s.nextInt();
+  
 
-        double pagoTotal = 0.0d;
-        double pagoFinal = 0.0d;
+        double pagoTotal = 0;
+        double pagoFinal = 0;
 
         if (indIngrediente1 == true) {
-            pagoTotal = precioIngrediente1;
+            pagoTotal = precioIngrediente;
 
             if  {
                 else(indIngrediente2 == true) 
@@ -57,15 +57,7 @@ public class Quiz1 {
         }
     }
 
-    public static void imprimirFactura(
-            double pagoFinal,
-            boolean indIngrediente1,
-            boolean indIngrediente2,
-            boolean indIngrediente3,
-            String nombreIngrediente1,
-            String nombreIngrediente2,
-            String nombreIngrediente3,
-            int tamano) {
+    public static void imprimirFactura( double pagoFinal, boolean indIngrediente1,  boolean indIngrediente2, boolean indIngrediente3, String nombreIngrediente1, String nombreIngrediente2, String nombreIngrediente3, int tamano) {
         System.out.println("Precio" + pagoFinal);
 
         if (indIngrediente1 == true) {
