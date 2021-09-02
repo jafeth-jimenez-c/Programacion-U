@@ -10,5 +10,9 @@ package Semana4;
  * @author Usuario
  */
 public class Soluciontrabajoextrclass {
-    publicdouble calcularImpuesto(int numDependientes, double sala)
+    public double calcularImpuesto(int numDependientes, double sala){
+        
+        return 0;
+        
+    }
 }
