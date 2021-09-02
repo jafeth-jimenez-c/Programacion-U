@@ -14,17 +14,17 @@ import java.util.Scanner;
 public class Quiz1 {
 
     public static void main(String[] args) {
-        String nombreIngrediente1 = "pereroni";
-        String nombreIngrediente2 = "jamon";
-        String nombreIngrediente3 = "piña";
+        String nombreIngrediente1 = "jamon";
+        String nombreIngrediente2 = "queso";
+        String nombreIngrediente3 = "chile";
 
-        double precioIngrediente1 = 200.0d;
-        double precioIngrediente2 = 300.0d;
-        double precioIngrediente3 = 170.0d;
+        double precioIngrediente1 = 200;
+        double precioIngrediente2 = 300;
+        double precioIngrediente3 = 170;
 
-        boolean indIngrediente1 = false;
-        boolean indIngrediente2 = false;
-        boolean indIngrediente3 = false;
+        boolean indIngrediente1 = true;
+        boolean indIngrediente2 = true;
+        boolean indIngrediente3 = true;
 
         Scanner s = new Scanner(System.in);
         System.out.println("Desea " + nombreIngrediente1);
