@@ -33,7 +33,8 @@ public class practica {
      
         }
   }
- Scanner escanear = new Scanner(System.in);
+ /*Scanner escanear = new Scanner(System.in);
 
 System.out.println("numero de factores de riesgo")
 numfactores = scanner.
+*/
